@@ -9,6 +9,7 @@ public class MyAdventure : MonoBehaviour
     {
         start,
         intro,
+        credits,
         YouDie1,
         YouDie2,
         YouDie3,
@@ -49,14 +50,6 @@ public class MyAdventure : MonoBehaviour
 
     }
     private States currentState = States.start;
-    // Start is called before the first frame update
-    void Start()
-    {
-        print("hello world");
-        Terminal.WriteLine("its ye boii");
-        ShowMainMenu();
-
-    }
 
     void ShowMainMenu()
     {
@@ -78,6 +71,7 @@ public class MyAdventure : MonoBehaviour
     {
         switch (currentState)
         {
+            //starting fase of game (not actual gamplay)
             case (States.start):
 
                 if (input.ToLower() == "walker")
@@ -107,244 +101,190 @@ public class MyAdventure : MonoBehaviour
                 Terminal.WriteLine("just type walker");
                 }
                 break;
+            case (States.credits):
+
+                if (input.ToLower() == "menu")
+                {
+                    currentState = States.start;
+                    StartStart();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("error type: menu");
+                }
+                break;
             case (States.intro):
                 if (input.ToLower() == "continue")
                 {
                     currentState = States.Alone6;
                     StartAlone6();
                 }
-                else if (input == "") 
-                {
-                    currentState = States.;
-                    Start();
-                }
+
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("error Type: continue");
                 }
                 break;
+                //code for deaths
             case (States.YouDie1):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "menu")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.start;
+                    StartStart();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("error type menu");
                 }
                 break;
             case (States.YouDie2):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "menu")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.start;
+                    StartStart();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("error type menu");
                 }
                 break;
             case (States.YouDie3):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "menu")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.start;
+                    StartStart();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("error type menu");
                 }
                 break;
             case (States.YouDie4):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "menu")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.start;
+                    StartStart();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("error type menu");
                 }
                 break;
             case (States.YouDie5):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "menu")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.start;
+                    StartStart();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("error type menu");
                 }
                 break;
             case (States.YouDie6):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "menu")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.start;
+                    StartStart();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("error type menu");
                 }
                 break;
             case (States.YouDie7):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "menu")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.start;
+                    StartStart();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("error type menu");
                 }
                 break;
             case (States.YouDie8):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "menu")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.start;
+                    StartStart();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("error type menu");
                 }
                 break;
             case (States.YouDie9):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "menu")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.start;
+                    StartStart();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("error type menu");
                 }
                 break;
             case (States.YouDie10):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "menu")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.start;
+                    StartStart();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("error type menu");
                 }
                 break;
             case (States.YouDie11):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "menu")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.start;
+                    StartStart();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("error type menu");
                 }
                 break;
             case (States.YouDie12):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "menu")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.start;
+                    StartStart();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("error type menu");
                 }
                 break;
             case (States.YouDie13):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "menu")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.start;
+                    StartStart();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("error type menu");
                 }
                 break;
+                //code for actual gameplay choices that are not at the end of a path
             case (States.ImportantChoice1):
                 if (input.ToLower() == "continue")
                 {
@@ -583,7 +523,6 @@ public class MyAdventure : MonoBehaviour
                     Terminal.WriteLine("");
                 }
                 break;
-            case (States.):
             case (States.JourneyWithStrangers1):
                 if (input.ToLower() == "continue")
                 {
@@ -686,6 +625,7 @@ public class MyAdventure : MonoBehaviour
                     Terminal.WriteLine("");
                 }
                 break;
+                // code for the positive endings of the game
             case (States.YouWin1):
                 if (input.ToLower() == "continue")
                 {
@@ -741,8 +681,27 @@ public class MyAdventure : MonoBehaviour
 
         }
 
+    //code with all the text (the script) to be displayed
+    void StartStart()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("zombotony");
+        Terminal.WriteLine("can you survive the zombies?!!!?");
+        Terminal.WriteLine("type walker to start");
+    }
+    void StartCredits()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("Writer: Tim van Surksum ");
+        Terminal.WriteLine("Lead programmer: Tim van surksum");
+        Terminal.WriteLine("publisher: digital extremes");
+        Terminal.WriteLine("Co story writer: a maze I found on google images");
+        Terminal.WriteLine("Music: Bear McCrear");
+        Terminal.WriteLine();
+        Terminal.WriteLine("Type “menu” to go back to the menu.");
 
-void StartIntro()
+    }
+    void StartIntro()
 {
     Terminal.ClearScreen();
     Terminal.WriteLine("Your asleep you have a nightmare the world is run over by zombies. " +
