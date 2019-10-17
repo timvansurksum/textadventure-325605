@@ -108,124 +108,640 @@ public class MyAdventure : MonoBehaviour
                 }
                 break;
             case (States.intro):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "") 
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.YouDie1):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.YouDie2):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.YouDie3):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.YouDie4):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.YouDie5):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.YouDie6):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.YouDie7):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.YouDie8):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.YouDie9):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.YouDie10):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.YouDie11):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.YouDie12):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.YouDie13):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.ImportantChoice1):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.ImportantChoice2):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.ImportantChoice3):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.Family1):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.Family2):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.Family3):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.Alone1):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.Alone2):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.Alone3):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.Alone4):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.Alone5):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.Alone6):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.Alone1point1):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.IllusionOfChoice):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.):
             case (States.JourneyWithStrangers1):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.JourneyWithStrangers2):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.JourneyWithStrangers3):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.JourneyWithStrangers4):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.JourneyWithStrangers5):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.JourneyWithStrangers6):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.YouWin1):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.YouWin2):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
             case (States.YouWin3):
-
-            break;
+                if (input.ToLower() == "continue")
+                {
+                    currentState = States.Alone6;
+                    StartAlone6();
+                }
+                else if (input == "")
+                {
+                    currentState = States.;
+                    Start();
+                }
+                else
+                {
+                    Terminal.ClearScreen();
+                    Terminal.WriteLine("");
+                }
+                break;
         }
 
         }
 
 
-
-    }
 void StartIntro()
 {
     Terminal.ClearScreen();
@@ -233,90 +749,105 @@ void StartIntro()
         "Then your house is surrounded by zombies and just when you’re about to die. " +
         "Then you wake up and realize that that was no nightmare but reality. " +
         "You also realize that you are alone in your home, " +
-        "then suddenly you experience great dread when thinking about where your family is Type “continue” to start the game");
-    currentState = states.YouDie1;
-        }
+        "then suddenly you experience great dread when thinking about where your family is.");
+        Terminal.WriteLine("Type “continue” to start the game");
+    }
     void StartYouDie1()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine();
-        Terminal.WriteLine();
+        Terminal.WriteLine("You help the explanation however there are just too many zombies." +
+            "Eventually the area is taken but at great cost of lives including yours." +
+            "You're remembered as a hard worker towards a better future and a great leader" );
+        Terminal.WriteLine("Type “menu” to go back to the menu.");
     }
     void StartYouDie2()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine();
-        Terminal.WriteLine();
+        Terminal.WriteLine("You charge them head on but what you did not know is that their leader" +
+            " is an army Seargeant who trained everyone over the past year you stand no chance," +
+            " but at least your death is glorious. ");
+        Terminal.WriteLine("Type “menu” to go back to the menu.");
     }
     void StartYouDie3()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine();
-        Terminal.WriteLine();
+        Terminal.WriteLine("You live together for about 3 days till you" +
+            "and the other leaders of your group are killed") ;
+        Terminal.WriteLine("Type “menu” to go back to the menu.");
     }
     void StartYouDie4()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine();
-        Terminal.WriteLine();
+        Terminal.WriteLine("You go south, but soon you notice that with the " +
+            "many people you are you just simply don’t have enough food." +
+            " You lose the spirit to fight and get taken by surprise by the zombies. ");
+        Terminal.WriteLine("Type “menu” to go back to the menu.");
     }
     void StartYouDie5()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine();
-        Terminal.WriteLine();
+        Terminal.WriteLine("You go north, but soon you notice that with the many people" +
+            " you are you just simply don’t have enough food.You lose the spirit to fight" +
+            " and get taken by surprise by the zombies. ");
+        Terminal.WriteLine("Type “menu” to go back to the menu.");
     }
     void StartYouDie6()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine();
-        Terminal.WriteLine();
+        Terminal.WriteLine("You spend weeks trying to find your family," +
+            " but with time you end up losing hope and end up in a state of depression. " +
+            "You lose your will to live and eventually die due to recklessness. ");
+        Terminal.WriteLine("Type “menu” to go back to the menu.");
     }
     void StartYouDie7()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine();
-        Terminal.WriteLine();
+        Terminal.WriteLine("After fleeing from the zombies," +
+            " you notice it getting dark. You decide to seek shelter in the mall," +
+            " however its dark and there are more zombies. ");
+        Terminal.WriteLine("Type “menu” to get back to the menu.");
     }
     void StartYouDie8()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine();
-        Terminal.WriteLine();
+        Terminal.WriteLine("you go north out of Florida after about a month of traveling" +
+            " you end up at the border of Canada exhausted and hungry your alone there are almost no zombies," +
+            " but it doesn’t matter because you have no food.");
+        Terminal.WriteLine("Type “start” to go back to the menu.");
     }
     void StartYouDie9()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine();
-        Terminal.WriteLine();
+        Terminal.WriteLine("you chose to stay at your house this." +
+            " This goes well for about a month when all your food has " +
+            "run out you get surrounded by zombies at the mall and this " +
+            "is the end you kill as many as you can. Hoping this will at " +
+            "least help the other humans alive.  ");
+        Terminal.WriteLine("Type “start” to go back to the menu.");
     }
     void StartYouDie10()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine();
-        Terminal.WriteLine();
+        Terminal.WriteLine("");
+        Terminal.WriteLine("");
     }
     void StartYouDie11()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine();
-        Terminal.WriteLine();
+        Terminal.WriteLine("");
+        Terminal.WriteLine("");
     }
     void StartYouDie12()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine();
-        Terminal.WriteLine();
+        Terminal.WriteLine("");
+        Terminal.WriteLine("");
     }
     void StartYouDie13()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine();
-        Terminal.WriteLine();
+        Terminal.WriteLine("");
+        Terminal.WriteLine("");
     }
     
-}
-
-
-
 }
