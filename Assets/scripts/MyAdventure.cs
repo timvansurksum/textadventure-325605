@@ -286,71 +286,81 @@ public class MyAdventure : MonoBehaviour
                 break;
                 //code for actual gameplay choices that are not at the end of a path
             case (States.ImportantChoice1):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "stay")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
+                    currentState = States.IllusionOfChoice;
+                    StartIllusionOfChoice();
                 }
-                else if (input == "")
+                else if (input == "leave")
                 {
-                    currentState = States.;
-                    Start();
+                    currentState = States.Family1;
+                    StartFamily1();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("Error Type: stay/leave");
                 }
                 break;
             case (States.ImportantChoice2):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "stay")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
+                    currentState = States.JourneyWithStrangers5;
+                    StartJourneyWithStrangers5();
                 }
-                else if (input == "")
+                else if (input == "leave")
                 {
-                    currentState = States.;
-                    Start();
+                    currentState = States.Alone3;
+                    StartAlone3();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("Error Type: stay/leave");
                 }
                 break;
             case (States.ImportantChoice3):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "kill")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
+                    currentState = States.YouDie13;
+                    StartYouDie13();
                 }
-                else if (input == "")
+                else if (input == "leave")
                 {
-                    currentState = States.;
-                    Start();
+                    currentState = States.Alone1point1;
+                    StartAlone1point1();
+                }
+                else if (input == "stay")
+                {
+                    currentState = States.Family3;
+                    StartFamily3();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("Error type: kill/leave/stay");
                 }
                 break;
             case (States.Family1):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "hide")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
+                    currentState = States.YouDie11;
+                    StartYouDie11();
                 }
-                else if (input == "")
+                else if (input == "fight")
                 {
-                    currentState = States.;
-                    Start();
+                    currentState = States.YouDie10;
+                    StartYouDie10();
+                }
+                else if (input == "flee")
+                {
+                    currentState = States.Family2;
+                    StartFamily2();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("Error type: flee/fight/hide");
                 }
                 break;
             case (States.Family2):
