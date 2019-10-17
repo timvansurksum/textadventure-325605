@@ -828,26 +828,230 @@ void StartIntro()
     void StartYouDie10()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine("");
-        Terminal.WriteLine("");
+        Terminal.WriteLine("You choose to fight, however." +
+            " From behind another bigger horde of zombies appears you are lost." +
+            " You spend your dying moments in dread to relieve the suffering you " +
+            "shoot your family through the head and then yourself. ");
+        Terminal.WriteLine("Type “start” to go back to the menu.");
     }
     void StartYouDie11()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine("");
-        Terminal.WriteLine("");
+        Terminal.WriteLine("after about 3 hours you realize that the bunker is surrounded" +
+            " those who fought lost. You have no place to go. " +
+            "You and the others die of hunger, or commit suicide. ");
+        Terminal.WriteLine("Type “start” to go back to the menu.");
     }
     void StartYouDie12()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine("");
-        Terminal.WriteLine("");
+        Terminal.WriteLine("You try to save David and Martha but when you are almost" +
+            " done a large horde of zombies comes from behind and you all die. ");
+        Terminal.WriteLine("Type “start” to go back to the menu.");
     }
     void StartYouDie13()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("You wander around to find them when it turns night and you realize that this wasn’t" +
+            " a way to honor them, but it was your out. You let yourself be eaten by zombies forever roaming this " +
+            "earth as a shadow of what you once were.");
+        Terminal.WriteLine("Type “start” to go back to the menu.");
+    }
+    void startImportantChoice1()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("After 2 days of traveling you meet a large group of people," +
+            " they seem friendly. But they want to go to cape Canaveral to hopefully get help" +
+            " from the military. But you know that your family probably would have gone to Orlando." +
+            " So, you must choose search for your family risking death or stay with this group. ");
+        Terminal.WriteLine("Type “stay” to stay with the group.");
+        Terminal.WriteLine("Type “leave” to search for your family.");
+    }
+    void startImportantChoice2()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("You and another leader Natasja sneak in the building and successfully assassinate their leader." +
+            " Apparently, he was an army Seargeant who oppressed the people into taking arms up against us." +
+            " So, there is finally peace. And over the past year you have slowly fallen in love with Natasja," +
+            " but when she finally kisses you. You get reminded of your old family. You're struck between " +
+            "taking this huge step moving on or staying in the past. Do you leave or stay? ");
+        Terminal.WriteLine("Type “stay” to stay.");
+        Terminal.WriteLine("Type “leave” to leave.");
+        
+    }
+    void startImportantChoice3()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("It is 2 weeks later, and everyone is still struck by the deaths of Martha and David." +
+            " You! chose who to save, therefore you most of all are broken. " +
+            "You consider leaving or at least to try to kill them as zombies and give them a proper burial. " +
+            "Everyone tries to convince you that you should neither leave nor find their zombies. ");
+        Terminal.WriteLine("Type ”kill” to kill those you left behind.");
+        Terminal.WriteLine("Type “leave” to leave the group.");
+        Terminal.WriteLine("Type “stay” to stay. ");
+    }
+    void StartFamily1()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("After 4 days of traveling you discover a huge military camp. " +
+            "You have been there for 3 days when you find your family.You are as happy as you could possibly be," +
+            " however the feeling is short lived the camp gets overrun by a huge group of zombies." +
+            " Most of the people are fighting back with all they got, there is a military truck nearby. " +
+            "Then suddenly you realize that this camp is built on an old fort and you can enter it." +
+            " Do you flee hide or do you fight?");
+        Terminal.WriteLine("Type “hide” to hide in the bunker.");
+        Terminal.WriteLine("Type “fight” to defend the camp.");
+        Terminal.WriteLine("Type “flee” to take the truck and flee.");
+    }
+    void StartFamily2()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("You fled the base with the truck and a nice family of 4(David, Martha," +
+            " indigo, and tony). The family white is very nice and over a period of 6 hours" +
+            " you bond with them. En then you notice you are out of gas." +
+            " You get surrounded by zombies you fight your way through," +
+            " but Tony and Indigo are surrounded and so are Martha and David." +
+            " You all realize you can only save 2 people do you either save Tony and Indigo," +
+            " or Martha and David. ");
+        Terminal.WriteLine("Type “Tony” to try to save Tony and Indigo.");
+        Terminal.WriteLine("Type “David” to try to save David and Martha.");
+    }
+    void StartFamily3()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("You stayed with the group never forgetting what you did. " +
+            "With the memory staying like a scar for the rest of your live. " +
+            "You spend the next few yours surviving the apocalypse and slowly rebuilding society. " +
+            "Your experiences shaped the person you are today. " +
+            " Trying to save every human you can.");
+        Terminal.WriteLine("Type “GrimesMuch” to continue.");
+    }
+    void StartAlone1()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("You leave alone with only a few supplies and a small car." +
+            "After only a day of traveling you realize the magnitude of doing this alone when" +
+            " faced with a group of zombies around your car when you left shortly before." +
+            " Do you try and get your car back risking getting bit? Or do you flee risking " +
+            "not being able to find a car. ");
+        Terminal.WriteLine("Type “flee” to flee.");
+        Terminal.WriteLine("ype “car” to try to get your car back.");
+    }
+    void StartAlone1point1()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("You decided to go away because you could not bear to be with them. " +
+            "You decide to go back to your home up north. In a sort of self-banishment. " +
+            "You retake your home. ");
+        Terminal.WriteLine("Type “continue” to continue. ");
+
+    }
+    void StartAlone2()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("You succeed in getting back your car however the tank has not nearly" +
+            " enough to get to where your family has gone. Do you risk the journey and seek" +
+            " after your family or do you accept their death and move on with your new family? ");
+        Terminal.WriteLine("Type “back” to go back.");
+        Terminal.WriteLine("Type “search” to try to find your family.");
+    }
+    void StartAlone3()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("You just could not take that reminder you leave. " +
+            "You go back to your old home. As a reminder of Who you left to be alive.");
+        Terminal.WriteLine("Type “continue” to continue.");
+    }
+    void StartAlone4()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("You live a lonely life in your home of grief. " +
+            "You wake up farm food kill zombies and go to bed. You're in a" +
+            " continuing circle of depression. Then you decide to retake your hometown not" +
+            " for yourself but for those who come and are willing to stay. ");
+        Terminal.WriteLine("Type “continue” to continue.");
+
+    }
+    void StartAlone5()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("Years later you have built a massive society of people" +
+            " and you hear that your family died their dead bodies roaming around the" +
+            " country. Once again you are struck with grief and self-hate. Could you " +
+            "have made a difference ");
+        Terminal.WriteLine("Type “continue” to read the next chapter.");
+    }
+    void StartAlone6()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("You have survived the apocalypse for 2 weeks now" +
+            " when you come to an conclusion: you stay here taking your chances," +
+            " you go out lightly packed heading up north were you hope zombies can’t survive" +
+            " because of the zombies, or you go to the south were you think most people and hopefully" +
+            " your family will be. Risking the enormous number of zombies that will be there.");
+        Terminal.WriteLine("Type “north” to go north.");
+        Terminal.WriteLine("Type “south” to go south.");
+        Terminal.WriteLine("Type “stay” to stay.");
+    }
+    void StartIllusionOfChoice()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("You chose to stay with the group sadly after 2 weeks of traveling and you getting to know them your travels and hardships are for nothing there is no-one at the military base. Hearing this everyone wants to set up a base and maybe eventually a society at the base. You feel great sadness knowing you could have sought after your family and there empathetic to how you feel, however the ask you not to go and stay and help ");
+        Terminal.WriteLine("");
+    }
+    void StartJourneyWithStrangers1()
     {
         Terminal.ClearScreen();
         Terminal.WriteLine("");
         Terminal.WriteLine("");
     }
-    
+    void StartJourneyWithStrangers2()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("");
+        Terminal.WriteLine("");
+    }
+    void StartJourneyWithStrangers3()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("");
+        Terminal.WriteLine("");
+    }
+    void StartJourneyWithStrangers4()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("");
+        Terminal.WriteLine("");
+    }
+    void StartJourneyWithStrangers5()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("");
+        Terminal.WriteLine("");
+    }
+    void StartJourneyWithStrangers6()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("");
+        Terminal.WriteLine("");
+    }
+    void StartYouWin1()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("");
+        Terminal.WriteLine("");
+    }
+    void StartYouWin2()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("");
+        Terminal.WriteLine("");
+    }
+    void StartYouWin3()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("");
+        Terminal.WriteLine("");
+    }
+
 }
