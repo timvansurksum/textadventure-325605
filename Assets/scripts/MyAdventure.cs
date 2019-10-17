@@ -996,62 +996,97 @@ void StartIntro()
     void StartIllusionOfChoice()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine("You chose to stay with the group sadly after 2 weeks of traveling and you getting to know them your travels and hardships are for nothing there is no-one at the military base. Hearing this everyone wants to set up a base and maybe eventually a society at the base. You feel great sadness knowing you could have sought after your family and there empathetic to how you feel, however the ask you not to go and stay and help ");
-        Terminal.WriteLine("");
+        Terminal.WriteLine("You chose to stay with the group sadly after 2 weeks of traveling," +
+            " and you getting to know them your travels and hardships are for nothing there is no-one" +
+            " at the military base. Hearing this everyone wants to set up a base and maybe eventually" +
+            " a society at the base. You feel great sadness knowing you could have sought after your" +
+            " family and there empathetic to how you feel, however the ask you not to go and stay and help ");
+
+        Terminal.WriteLine("Type “leave” to leave.");
+        Terminal.WriteLine("Type “stay to stay.");
     }
     void StartJourneyWithStrangers1()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine("");
-        Terminal.WriteLine("");
+        Terminal.WriteLine("After 1 year you finally made peace with the loss of your family." +
+            " You move on having found a purpose of keeping people safe.  ");
+        Terminal.WriteLine("Type “continue” to continue");
     }
     void StartJourneyWithStrangers2()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine("");
-        Terminal.WriteLine("");
+        Terminal.WriteLine("You want to flee but where? Do you go north till you find some place," +
+            " or do you try and reach Miami hoping there is another more welcome group there. ");
+        Terminal.WriteLine("Type “north” to go north.");
+        Terminal.WriteLine("Type “south” to go to Miami.");
+
     }
     void StartJourneyWithStrangers3()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine("");
-        Terminal.WriteLine("");
+        Terminal.WriteLine("The society is doing well its seen as a safe haven" +
+            " for those who arrive however there is another group forming." +
+            " Turmoil stirs within the communities. Do you leave taking your" +
+            " chances somewhere else do you fight, or do you try to live together?");
+        Terminal.WriteLine("Type “live” to try to live with the other community.");
+        Terminal.WriteLine("Type “fight” to go to war. ");
+        Terminal.WriteLine("Type “run” to flee.");
     }
     void StartJourneyWithStrangers4()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine("");
-        Terminal.WriteLine("");
+        Terminal.WriteLine("Going to war it is," +
+            " but now a plan of action is needed do you attack there base " +
+            "or do you assassinate their leaders. ");
+        Terminal.WriteLine("Type “sneak” for an assassination attempt.");
+        Terminal.WriteLine("Type “charge” to attack them head on.");
     }
     void StartJourneyWithStrangers5()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine("");
-        Terminal.WriteLine("");
+        Terminal.WriteLine("You chose that to be able to honor your old family" +
+            " you would have to at least be happy. So, you persue a relationship with Natasja." +
+            " Years go by and the community is growing fast they need people to take over a large area." +
+            " Do you help, or do you decide you have survived too much and" +
+            " have too much to risk taking that chance. ");
+        Terminal.WriteLine("Type “help” to help.");
+        Terminal.WriteLine("Type “risk” to stay and be with your family.");
     }
     void StartJourneyWithStrangers6()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine("");
-        Terminal.WriteLine("");
+        Terminal.WriteLine("After you did not choose to help almost no-one wanted to go" +
+            " it took another 6 years to take the area. " +
+            "At that point you had 2 kids to teach about the world that once was and the world" +
+            " that is to come, there world. ");
+        Terminal.WriteLine("Type “continue” to continue.");
     }
     void StartYouWin1()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine("");
-        Terminal.WriteLine("");
-    }
-    void StartYouWin2()
-    {
-        Terminal.ClearScreen();
-        Terminal.WriteLine("");
-        Terminal.WriteLine("");
+        Terminal.WriteLine("Decades pass your kids grow up and get kids of their own" +
+            " when finaly at the age of 58 you die of natural causes." +
+            " You are remembered as one of the people responsible for humans being" +
+            " alive today you are admired across the new country you helped form.");
+        Terminal.WriteLine("Type “peace” to go to the credits.");
     }
     void StartYouWin3()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine("");
-        Terminal.WriteLine("");
+        Terminal.WriteLine("You build a so safe that decades down the line statues are built after you." +
+            " You are a hero. In fact, life is so safe that you die by heart attack while writing a book." +
+            " Your funeral was attended by all the people around you. You die a hero's death.");
+        Terminal.WriteLine("Type “peace” to go to the credits.");
+    }
+    void StartYouWin2()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("At the age of 80 you die of a heart attack alone in your house." +
+            " You were the reason thousands lived yet almost no-one knows that only 5 people" +
+            " that were at your community since the beginning spend your funeral. The world is safer" +
+            " thanks to you. Yet it feels bittersweet to both you in your last years and for those" +
+            " who knew you and your story.");
+        Terminal.WriteLine("Type “bittersweet” to go to the credits.");
     }
 
 }
