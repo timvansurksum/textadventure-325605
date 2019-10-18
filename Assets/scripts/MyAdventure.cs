@@ -364,156 +364,137 @@ public class MyAdventure : MonoBehaviour
                 }
                 break;
             case (States.Family2):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "tony")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
+                    currentState = States.ImportantChoice3;
+                    startImportantChoice3();
                 }
-                else if (input == "")
+                else if (input == "david")
                 {
-                    currentState = States.;
-                    Start();
+                    currentState = States.YouDie12;
+                    StartYouDie12();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("Error type: david/tony");
                 }
                 break;
             case (States.Family3):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "GrimesMuch")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.YouWin3;
+                    StartYouWin3();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("Error Type: GrimesMuch");
                 }
                 break;
             case (States.Alone1):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "flee")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
+                    currentState = States.YouDie7;
+                    StartYouDie7();
                 }
-                else if (input == "")
+                else if (input == "car")
                 {
-                    currentState = States.;
-                    Start();
+                    currentState = States.Alone2;
+                    StartAlone2();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("Error Type: car/flee");
                 }
                 break;
             case (States.Alone2):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "back")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
+                    currentState = States.JourneyWithStrangers1;
+                    StartJourneyWithStrangers1();
                 }
-                else if (input == "")
+                else if (input == "search")
                 {
-                    currentState = States.;
-                    Start();
+                    currentState = States.YouDie6;
+                    StartYouDie6();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("Error type: search/back ");
                 }
                 break;
             case (States.Alone3):
                 if (input.ToLower() == "continue")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.Alone4;
+                    StartAlone4();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("Error type: continue");
                 }
                 break;
             case (States.Alone4):
                 if (input.ToLower() == "continue")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.Alone5;
+                    StartAlone5();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("Error type: continue");
                 }
                 break;
             case (States.Alone5):
                 if (input.ToLower() == "continue")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
+                    currentState = States.YouWin2;
+                    StartYouWin2();
                 }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
-                }
+
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("Error type: continue");
                 }
                 break;
             case (States.Alone6):
-                if (input.ToLower() == "continue")
+                if (input.ToLower() == "north")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
+                    currentState = States.YouDie8;
+                    StartYouDie8();
                 }
-                else if (input == "")
+                else if (input == "south")
                 {
-                    currentState = States.;
-                    Start();
+                    currentState = States.ImportantChoice1;
+                    startImportantChoice1();
+                }                
+                else if (input == "stay")
+                {
+                    currentState = States.YouDie9;
+                    StartYouDie9();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("Error type: north/south/stay");
                 }
                 break;
             case (States.Alone1point1):
                 if (input.ToLower() == "continue")
                 {
-                    currentState = States.Alone6;
-                    StartAlone6();
-                }
-                else if (input == "")
-                {
-                    currentState = States.;
-                    Start();
+                    currentState = States.Alone4;
+                    StartAlone4();
                 }
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("");
+                    Terminal.WriteLine("Error type: continue");
                 }
                 break;
             case (States.IllusionOfChoice):
