@@ -51,12 +51,14 @@ public class MyAdventure : MonoBehaviour
     }
     private States currentState = States.start;
 
-    void ShowMainMenu()
+    void Start()
     {
         Terminal.ClearScreen();
         Terminal.WriteLine("zombotony");
         Terminal.WriteLine("can you survive the zombies?!!!?");
         Terminal.WriteLine("type walker to start");
+        Terminal.WriteLine("type exit to exit game.");
+        currentState = States.start;
 
     }
     // Update is called once per frame
@@ -93,6 +95,10 @@ public class MyAdventure : MonoBehaviour
                     Terminal.WriteLine("can you survive the zombies?!!!?");
                     Terminal.WriteLine("type walker to start");
 
+                }
+                else if (input == "exit")
+                {
+                    System.Environment.Exit(1);
                 }
                 else
                 {
@@ -381,7 +387,7 @@ public class MyAdventure : MonoBehaviour
                 }
                 break;
             case (States.Family3):
-                if (input.ToLower() == "GrimesMuch")
+                if (input.ToLower() == "grimesmuch")
                 {
                     currentState = States.YouWin3;
                     StartYouWin3();
@@ -389,7 +395,7 @@ public class MyAdventure : MonoBehaviour
                 else
                 {
                     Terminal.ClearScreen();
-                    Terminal.WriteLine("Error Type: GrimesMuch");
+                    Terminal.WriteLine("Error Type: grimesmuch");
                 }
                 break;
             case (States.Alone1):
@@ -453,8 +459,8 @@ public class MyAdventure : MonoBehaviour
             case (States.Alone5):
                 if (input.ToLower() == "continue")
                 {
-                    currentState = States.YouWin2;
-                    StartYouWin2();
+                    currentState = States.YouWin1;
+                    StartYouWin1();
                 }
 
                 else
@@ -585,7 +591,7 @@ public class MyAdventure : MonoBehaviour
             case (States.JourneyWithStrangers5):
                 if (input.ToLower() == "help")
                 {
-                    currentState = States.YouWin1;
+                    currentState = States.YouDie1;
                     StartYouDie1();
                 }
                 else if (input == "risk")
@@ -602,8 +608,8 @@ public class MyAdventure : MonoBehaviour
             case (States.JourneyWithStrangers6):
                 if (input.ToLower() == "continue")
                 {
-                    currentState = States.YouWin1;
-                    StartYouWin1();
+                    currentState = States.YouWin2;
+                    StartYouWin2();
                 }
                 else
                 {
@@ -659,6 +665,7 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("zombotony");
         Terminal.WriteLine("can you survive the zombies?!!!?");
         Terminal.WriteLine("type walker to start");
+        Terminal.WriteLine("type exit to exit game.");
     }
     void StartCredits()
     {
@@ -743,7 +750,7 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("you go north out of Florida after about a month of traveling" +
             " you end up at the border of Canada exhausted and hungry your alone there are almost no zombies," +
             " but it doesn’t matter because you have no food.");
-        Terminal.WriteLine("Type “start” to go back to the menu.");
+        Terminal.WriteLine("Type “menu” to go back to the menu.");
     }
     void StartYouDie9()
     {
@@ -753,7 +760,7 @@ public class MyAdventure : MonoBehaviour
             "run out you get surrounded by zombies at the mall and this " +
             "is the end you kill as many as you can. Hoping this will at " +
             "least help the other humans alive.  ");
-        Terminal.WriteLine("Type “start” to go back to the menu.");
+        Terminal.WriteLine("Type “menu” to go back to the menu.");
     }
     void StartYouDie10()
     {
@@ -762,7 +769,7 @@ public class MyAdventure : MonoBehaviour
             " From behind another bigger horde of zombies appears you are lost." +
             " You spend your dying moments in dread to relieve the suffering you " +
             "shoot your family through the head and then yourself. ");
-        Terminal.WriteLine("Type “start” to go back to the menu.");
+        Terminal.WriteLine("Type “menu” to go back to the menu.");
     }
     void StartYouDie11()
     {
@@ -770,14 +777,14 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("after about 3 hours you realize that the bunker is surrounded" +
             " those who fought lost. You have no place to go. " +
             "You and the others die of hunger, or commit suicide. ");
-        Terminal.WriteLine("Type “start” to go back to the menu.");
+        Terminal.WriteLine("Type “menu” to go back to the menu.");
     }
     void StartYouDie12()
     {
         Terminal.ClearScreen();
         Terminal.WriteLine("You try to save David and Martha but when you are almost" +
             " done a large horde of zombies comes from behind and you all die. ");
-        Terminal.WriteLine("Type “start” to go back to the menu.");
+        Terminal.WriteLine("Type “menu” to go back to the menu.");
     }
     void StartYouDie13()
     {
@@ -785,7 +792,7 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("You wander around to find them when it turns night and you realize that this wasn’t" +
             " a way to honor them, but it was your out. You let yourself be eaten by zombies forever roaming this " +
             "earth as a shadow of what you once were.");
-        Terminal.WriteLine("Type “start” to go back to the menu.");
+        Terminal.WriteLine("Type “menu” to go back to the menu.");
     }
     void startImportantChoice1()
     {
@@ -854,7 +861,7 @@ public class MyAdventure : MonoBehaviour
             "You spend the next few yours surviving the apocalypse and slowly rebuilding society. " +
             "Your experiences shaped the person you are today. " +
             " Trying to save every human you can.");
-        Terminal.WriteLine("Type “GrimesMuch” to continue.");
+        Terminal.WriteLine("Type “grimesmuch” to continue.");
     }
     void StartAlone1()
     {
